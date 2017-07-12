@@ -49,7 +49,8 @@ $(document).ready(function(){
         $('#userSecondsInputEnd').val('0');
         $('#userEndTimeField').val('');
 
-        //add 
+        $('#addToDataBaseBox').remove();
+        //add addToDataBasBox
         $('<div id = "addToDataBaseBox"></div>').insertAfter('#copyBTN');
         $('#addToDataBaseBox').append('<div id ="timingInfo"><p>your start time was: </p>'+'<p id = "videoStartTime">' + userStartTime + '</p>');
         $('#addToDataBaseBox').append('<p>your end time was: </p>'+'<p id = "videoEndTime">' + userEndTime + '</p></div>');
