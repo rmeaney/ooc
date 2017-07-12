@@ -58,5 +58,8 @@ $(document).ready(function(){
         $('#addToDataBaseBox').append('<a href = "#submitBTN"><button id = "submitToDbBTN">Add to Database</button></a></div>');
         $('#addToDataBaseBox').append('<hr>');
 
+        //clear userURL field for next use
+        $('#userUrl').val('');
+
 });
 });
