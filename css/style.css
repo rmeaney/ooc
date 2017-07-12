@@ -12,7 +12,11 @@ form, #results { padding: 0 20px; }
 .item { margin-bottom: 25px; }
 .w100 { width: 100%; }
 
-.btn-copy { background: #952b2b; border-color: #957575; color:white; }
+.btn-submit{ background: #952b2b; border-color: #957575; color: #fff; }
+.btn-submit:hover, .btn-submit:active, .btn-submit:focus { background: #782b2b;  border-color: #952b2b; }
+.btn-copy { background: #952b2b; border-color: #957575; color: #fff; }
 .btn-copy:hover, .btn-copy:active, .btn-copy:focus { background: #782b2b;  border-color: #952b2b; }
 .btn-primary { background: #952b2b; border-color: #957575; }
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: #782b2b;  border-color: #952b2b; }
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: #782b2b;  border-color: #952b2b; }.yt-red {background-color: red; color: white;}
+.ig-purple {background-color: purple; color: white;}
+.data-orange {background-color: orange; color: white;}

@@ -1,9 +1,3 @@
-
-// <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-// <!-- Button to create yt data -->
-// <button type="submit" class="btn btn-primary" id="addYtBtn">Submit</button>
-
-
 // Initialize Firebase
   var config = {
     apiKey: "AIzaSyCLPgcEMd90AqZanzcfmiGAJslssbsQJ80",
@@ -19,39 +13,39 @@
    var database= firebase.database(); 
    
 // 3. Button for adding yt
-$("#addYtBtn").on("click", function() {
+$("#addYtVideo").on("click", function() {
 
   // Grabs user input
-    var startTime = $("#startTimeInput").val().trim();
-    var endTIme = $("#endTimeInput").val().trim();
-    var ytUrl = moment($("#ytUrlInput").val().trim(), "HH:mm").subtract(10, "years").format("X");
-    var videoTitle = $("#videoTitleInput").val().trim();
+    var videoTitle = $("#searchBtn").val().trim();
+    var ytUrl = moment($("#submitBTN").val().trim();  
+    var startTime = $("#userHoursInputStartInput", "#userMinutesInputStartInput", "#userSecondsInputStartInput").val().trim();
+    var endTIme = $("#userHoursInputEndInput", "#userMinutesInputEndInput", "#userSecondsInputEndInput").val().trim();
 
      // Creates local "temporary" object for holding train data
     var newVideo = {
-        name: trainName,
-        destination: destination,
-        firstTrain: firstTrainUnix,
-        frequency: frequency
+        title: videoTitle
+        url: ytUrl,
+        start: startTime
+        end: endTime 
     }
 
     // Upload to the database
-    database.ref().push(newTrain);
+    database.ref().push(newVideo);
 
     // Log  everything to console
-    console.log(newTrain.name);
-    console.log(newTrain.destination);
-    console.log(firstTrainUnix);
-    console.log(newTrain.frequency)
+    console.log(newVideo.title);
+    console.log(newVideo.url);
+    console.log(newVideo.start);
+    console.log(newVideo.end);
 
     // Alert
-    alert("Train successfully added");
+    alert("Youtube database successfully added");
 
     // Clears all text-boxes
-    $("#trainNameInput").val("");
-    $("#destinationInput").val("");
-    $("#firstTrainInput").val("");
-    $("#frequencyInput").val("");
+    $("#searchBtn")).val("");
+    $("#submitBTN").val("");
+    $("#userHoursInputStartInput", "#userMinutesInputStartInput", "#userSecondsInputStartInput").val("");
+    $("#userHoursInputEndInput", "#userMinutesInputEndInput", "#userSecondsInputEndInput").val("");
 
     //  Calculates when next train arrives.
     return false;
@@ -64,10 +58,10 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     console.log(childSnapshot.val());
 
     //bank
-    var tName = childSnapshot.val().name;
-    var tDestination = childSnapshot.val().destination;
-    var tFrequency = childSnapshot.val().frequency;
-    var tFirstTrain = childSnapshot.val().firstTrain;
+    var tVideoTitle = childSnapshot.val().title;
+    var tUrl = childSnapshot.val().url;
+    var tStartTime = childSnapshot.val().start;
+    var tEndTime = childSnapshot.val().end;
 
     //Calculate 
     var differenceTimes = moment().diff(moment.unix(tFirstTrain), "minutes");
@@ -84,7 +78,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     console.log(moment().format("X"));
 
     // Add train's data 
-    $("#trainTable > tbody").append("<tr><td>" + tName + "</td><td>" + tDestination + "</td><td>" + tFrequency + "</td><td>" + tArrival + "</td><td>" + tMinutes + "</td></tr>");
+    $("#videoTable > tbody").append("<tr><td>" + tVideoTitle + "</td><td>" + tUrl + "</td><td>" + tStart + "</td><td>" + tEnd + "</td><td>");
 
 });
 
