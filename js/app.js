@@ -24,6 +24,7 @@ $(function() {
               console.log(data);
                 $("#results").append(tplawesome(data, [{"title":item.snippet.title, "videoid":item.id.videoId}]));
                 $("#results").append('<a href = "#urlAnchor"><button id ='+item.id.videoId +" "+'class ='+' generatedButton' + ' ' + 'value = ' + item.id.videoId + '>Use this Video</button></a>');
+                title = item.snippet.title;
             });
           });
           resetVideoHeight();
