@@ -17,7 +17,7 @@
         <header>
 
             <h1 class="w100 text-center"><a href="index.html">Out Of Context</a></h1>
-        <!--Navigation Bar-->
+            <!--Navigation Bar-->
             <div class="btn-group btn-group-justified" role="group" aria-label="...">
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-default yt-red">YouTube</button>
@@ -43,9 +43,6 @@
                     <!-- placeholder to target with copy button -->
                     <p><input type = "text" id = "userUrl" placeholder="Type something..." autocomplete="off" class="form-control"/></p>
                     <hr>
-
-                    <!-- jose's code -->
-                    <!--<p><button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#userUrl">Copy</button></p>-->
                     <br/>
                     
 
@@ -74,23 +71,22 @@
                     <!--End Input start Time-->
                     <br>
                     <br>
-                    <button id = "submitBTN">Make Link</button>
-                    
-                </form>
+                       <hr>
+                    <!--  Button to create new video clip -->
+                    <button id = "submitBTN" class="form-control btn btn-submit w25">Make Link</button>
+                    <hr>
 
-            <div id = "outputLink">Your link will go here</div> 
-            <div id = "courtesyLink"></div>
-                <p><button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#outputLink">Copy</button></p>
-                    <br/>
-           
-            <br/>
-                <div id="results"></div>
-                </div>
-                </div>
-                <!-- jose's code -->
-                    
-    
-        
+                    <div class="w100 text-center" id = "outputLink">Your link will go here</div>
+                    <hr>
+                    <!-- Copy Link  to Cipboard Button -->
+                    <button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#outputLink">Copy Generated Link</button>
+
+                    <div id="results"></div>
+                </form>
+                   
+            </div>
+        </div>
+                      
         <!-- scripts -->
         <script src="js/clipboard.min.js"></script>
         <script src="js/script.js"></script>
