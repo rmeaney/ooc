@@ -53,8 +53,9 @@ $(document).ready(function(){
         $('<div id = "addToDataBaseBox"></div>').insertAfter('#copyBTN');
         $('#addToDataBaseBox').append('<div id ="timingInfo"><p>your start time was: </p>'+'<p id = "videoStartTime">' + userStartTime + '</p>');
         $('#addToDataBaseBox').append('<p>your end time was: </p>'+'<p id = "videoEndTime">' + userEndTime + '</p></div>');
-        $('#addToDataBaseBox').append('<div id = "addDataPrompt"><p>Would you like to add this to our database? This will allow you and other users to easily access the your link again at any time.</p>');
-        $('#addToDataBaseBox').append('<button id = "submitToDbBTN">Add to Database</button></div>');
+        $('#addToDataBaseBox').append('<div id = "addDataPrompt"><p> Add this to the OOC database?</p>');
+        $('#addToDataBaseBox').append('<a href = "#submitBTN"><button id = "submitToDbBTN">Add to Database</button></a></div>');
+        $('#addToDataBaseBox').append('<hr>');
 
 });
 });
