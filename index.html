@@ -35,17 +35,12 @@
                     <p><input type="text" id="search" placeholder="Type something..." autocomplete="off" class="form-control" /></p>
 
                     <p><input type="submit" value="Search" class="form-control btn btn-primary w20"></p>
-                   <!--  <p><button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#search">Copy</ button></p> -->
                 </form>
-                <!-- Rick's code -->
+                <!-- Youtube API Manipulation  -->
                 <form>
                     <label id = "urlAnchor"><h2>Paste your youtube url here</h2></label>
-                    <!-- placeholder to target with copy button -->
                     <p><input type = "text" id = "userUrl" placeholder="Type something..." autocomplete="off" class="form-control"/></p>
                     <hr>
-                    <br/>
-                    
-
                     <!--Begin Input start Time-->
                     <h2>Select your start time</h2>
                     <label>Hours</label>
@@ -54,10 +49,8 @@
                     <input type ="text" id = "userMinutesInputStart" class ="userTimeInput" value = "0" size = "4">
                     <label>Seconds</label>
                     <input type = "text" id = "userSecondsInputStart" class ="userTimeInput" value = "0" size = "4">
-                    <br/>
+                    <br>
                     <!--End Input start Time-->
-
-                    
 
                     <!--Begin Input start Time-->
                     <h2>Select your End Time</h2>
@@ -69,9 +62,8 @@
                     <input type = "text" id = "userSecondsInputEnd" class ="userTimeInput" value = "0" size = "4">
                     
                     <!--End Input start Time-->
-                    <br>
-                    <br>
-                       <hr>
+                                       
+                    <hr>
                     <!--  Button to create new video clip -->
                     <button id = "submitBTN" class="form-control btn btn-submit w25">Make Link</button>
                     <hr>
@@ -90,7 +82,6 @@
         <!-- scripts -->
         <script src="js/clipboard.min.js"></script>
         <script src="js/script.js"></script>
-        <!-- relaced with latest vertion -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src="js/game.js"></script>
         <script src="js/app.js"></script>
