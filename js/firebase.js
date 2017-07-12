@@ -29,8 +29,8 @@ $("#addYtBtn").on("click", function() {
 
      // Creates local "temporary" object for holding train data
     var newVideo = {
-        name: trainName,
-        destination: destination,
+        name: startTime,
+        destination: endTime,
         firstTrain: firstTrainUnix,
         frequency: frequency
     }
@@ -48,10 +48,10 @@ $("#addYtBtn").on("click", function() {
     alert("Train successfully added");
 
     // Clears all text-boxes
-    $("#trainNameInput").val("");
-    $("#destinationInput").val("");
-    $("#firstTrainInput").val("");
-    $("#frequencyInput").val("");
+    $("#startTimeInput").val("");
+    $("#endTimeInput").val("");
+    $("#ytUrlInput").val("");
+    $("#videoTitleInput").val("");
 
     //  Calculates when next train arrives.
     return false;
