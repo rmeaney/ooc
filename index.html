@@ -30,15 +30,20 @@
         </header>
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
+                <!-- Begin search Youtube video-->              
                 <form action="#">
                     <p><input type="text" id="search" placeholder="Type something..." autocomplete="off" class="form-control" /></p>
                     <p><input type="submit" value="Search" class="form-control btn btn-primary w20"></p>
                 </form>
-                <!-- Youtube-API Video Manipulation  -->
+                <!-- End search Youtube video-->
+
+                <!-- Begin Youtube-API Video Manipulation  -->
                 <form>
+                    <!--Begin Input video search -->
                     <label id = "urlAnchor"><h2>Paste your youtube url here</h2></label>
                     <p><input type = "text" id = "userUrl" placeholder="Type something..." autocomplete="off" class="form-control"/></p>
-                    
+                    <!--End Input video search -->
+
                     <!--Begin Input start Time-->
                     <h2>Select your start time</h2>
                     <label>Hours</label>
@@ -47,7 +52,6 @@
                     <input type ="text" id = "userMinutesInputStart" class ="userTimeInput" value = "0" size = "4">
                     <label>Seconds</label>
                     <input type = "text" id = "userSecondsInputStart" class ="userTimeInput" value = "0" size = "4">
-                    
                     <!--End Input start Time-->
 
                     <!--Begin Input start Time-->
@@ -58,21 +62,23 @@
                     <input type ="text" id = "userMinutesInputEnd" class ="userTimeInput" value = "0" size = "4">
                     <label>Seconds</label>
                     <input type = "text" id = "userSecondsInputEnd" class ="userTimeInput" value = "0" size = "4">
-                    
-                    <!--End Input start Time-->
-                                       
                     <hr>
-                    <!--  Button to create new video clip -->
+                    <!--End Input start Time-->               
+
+                    <!--Begin create new video clip -->
                     <button id = "submitBTN" class="form-control btn btn-submit w25">Make Link</button>
                     <hr>
-
                     <div class="w100 text-center" id = "outputLink">Your link will go here</div>
                     <hr>
-                    <!-- Copy Link  to Cipboard Button -->
+                    <!--End create new video clip-->
+
+                    <!--Begin button to copy Link  to Cipboard.js-->
                     <button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#outputLink">Copy Generated Link</button>
+                    <!--End button to copy Link  to Cipboard.js-->
 
                     <div id="results"></div>
                 </form>
+                <!-- End Yutube-API Video Manipulation-->
                    
             </div>
         </div>
@@ -88,4 +94,4 @@
 
     </body>
 </html>
-<!-- This line is for testing purposes -->
+<!-- This line is for testing purposes use it to test changes on the master code-->
