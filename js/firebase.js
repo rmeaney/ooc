@@ -87,7 +87,3 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     $("#trainTable > tbody").append("<tr><td>" + tName + "</td><td>" + tDestination + "</td><td>" + tFrequency + "</td><td>" + tArrival + "</td><td>" + tMinutes + "</td></tr>");
 
 });
-
-
-
-
