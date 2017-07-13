@@ -14,7 +14,9 @@ header a { color: white; text-decoration: none; }
 header a:hover { text-decoration: none; color:white; }
 form { 	text-align: center;
 	   	margin-top: 20px;
-	   	border-color: white; }
+	   	border-color: white; 
+		color:black;
+}
 .userTimeInput{
 	color:red;
 }
