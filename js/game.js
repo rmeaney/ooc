@@ -64,7 +64,7 @@ $(document).ready(function(){
         //clear userURL field for next use
         $('#userUrl').val('');
     }else{
-        modal('not a valid url');
+        alert('not a valid url');
     }
 
 });
