@@ -30,5 +30,9 @@ h1 {color:lightgrey;}
 @media screen and (max-width: 480px) {
 	body{
 		background: lightblue;
+		color: black;
+	}
+	form{
+		color: black;
 	}
 }
