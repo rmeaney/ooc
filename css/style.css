@@ -1,7 +1,10 @@
 
 body { 
 	background: url(https://ak9.picdn.net/shutterstock/videos/6031205/thumb/1.jpg);
-	background-size: cover;
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: .5;
 	font-family: 'Bungee Inline', cursive;
 	color: lightgrey; }
 header { margin-top: 30px; }
@@ -11,7 +14,8 @@ form { margin-top: 20px;
 	   text-align: center; }
 form, #results { padding: 0 20px; }
 .item { margin-bottom: 25px; }
-.w100 { width: 100%; }
+.w100 { width: 100%;
+		color: lightgrey; }
 h1 {color:lightgrey;}
 
 .btn-submit{ background: blue; border-color: white; color: white; }
