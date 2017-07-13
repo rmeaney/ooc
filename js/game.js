@@ -53,7 +53,7 @@ $(document).ready(function(){
 
         $('#addToDataBaseBox').remove();
         //add addToDataBasBox
-        $('<div id = "addToDataBaseBox"></div>').insertAfter('#copyBTN');
+        $('<div id = "addToDataBaseBox"></div>').insertAfter('#addYtVideo');
         $('#addToDataBaseBox').append('<p> Add this to the OOC database?</p>')
         $('#addToDataBaseBox').append('<div id ="timingInfo"><p>your start time was: </p>'+'<p id = "videoStartTime">' + userStartTime + '</p>');
         $('#addToDataBaseBox').append('<p>your end time was: </p>'+'<p id = "videoEndTime">' + userEndTime + '</p></div>');
