@@ -17,7 +17,7 @@ $("#sub").on("click", function() {
 
   // Grabs user input
     var videoTitle = $("#searchBtn").val().trim();
-    var ytUrl = ($("#submitBTN").val().trim();  
+    var ytUrl = $("#submitBTN").val().trim();  
     var startTime = $("#userHoursInputStartInput", "#userMinutesInputStartInput", "#userSecondsInputStartInput").val().trim();
     var endTime = $("#userHoursInputEndInput", "#userMinutesInputEnd", "#userSecondsInputEndInput").val().trim();
 
