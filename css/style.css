@@ -15,7 +15,7 @@ header a:hover { text-decoration: none; color:white; }
 form { 	text-align: center;
 	   	margin-top: 20px;
 	   	border-color: white; }
-userTimeInput{
+.userTimeInput{
 	color:lightgrey;
 }
 #form-1 { background: rgba(0,0,0,.65);
