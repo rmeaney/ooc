@@ -17,7 +17,7 @@ $("#sub").on("click", function() {
 
   // Grabs user input
     var videoTitle = $("#searchBtn").val().trim();
-    var ytUrl = ($("#submitBTN").val().trim();  
+    var ytUrl = $("#submitBTN").val().trim();  
     var startTime = $("#userHoursInputStartInput", "#userMinutesInputStartInput", "#userSecondsInputStartInput").val().trim();
     var endTime = $("#userHoursInputEndInput", "#userMinutesInputEnd", "#userSecondsInputEndInput").val().trim();
 
@@ -42,7 +42,7 @@ $("#sub").on("click", function() {
     alert("Youtube database successfully added");
 
     // Clears all text-boxes
-    $("#searchBtn")).val("");
+    $("#searchBtn").val("");
     $("#submitBTN").val("");
     $("#userHoursInputStartInput", "#userMinutesInputStartInput", "#userSecondsInputStartInput").val("");
     $("#userHoursInputEndInput", "#userMinutesInputEndInput", "#userSecondsInputEndInput").val("");
