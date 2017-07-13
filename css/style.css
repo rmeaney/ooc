@@ -26,3 +26,9 @@ h1 {color:lightgrey;}
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus { color:blue; background: lightgrey;  border-color: white; }.yt-red {background-color: red; color: white;}
 .ig-purple {background-color: purple; color: white;}
 .data-orange {background-color: orange; color: white;}
+
+@media screen and (max-width: 480px) {
+	body{
+		background: lightblue;
+	}
+}
