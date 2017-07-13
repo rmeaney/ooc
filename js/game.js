@@ -49,5 +49,18 @@ $(document).ready(function(){
         $('#userSecondsInputEnd').val('0');
         $('#userEndTimeField').val('');
 
+        $('#addToDataBaseBox').remove();
+        //add addToDataBasBox
+        $('<div id = "addToDataBaseBox"></div>').insertAfter('#copyBTN');
+        $('#addToDataBaseBox').append('<p> Add this to the OOC database?</p>')
+        $('#addToDataBaseBox').append('<div id ="timingInfo"><p>your start time was: </p>'+'<p id = "videoStartTime">' + userStartTime + '</p>');
+        $('#addToDataBaseBox').append('<p>your end time was: </p>'+'<p id = "videoEndTime">' + userEndTime + '</p></div>');
+        $('#addToDataBaseBox').append('<div id = "addDataPrompt"><p>Please enter a title:</p>'+'<input Type ="text" id = "userTitle" class ="userTimeInput" value = "" size = "4">');
+        $('#addToDataBaseBox').append('<a href = "#submitBTN"><button id = "submitToDbBTN">Add to Database</button></a></div>');
+        $('#addToDataBaseBox').append('<hr>');
+
+        //clear userURL field for next use
+        $('#userUrl').val('');
+
 });
 });
