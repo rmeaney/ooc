@@ -42,7 +42,7 @@ $("#sub").on("click", function() {
     alert("Youtube database successfully added");
 
     // Clears all text-boxes
-    $("#searchBtn")).val("");
+    $("#searchBtn").val("");
     $("#submitBTN").val("");
     $("#userHoursInputStartInput", "#userMinutesInputStartInput", "#userSecondsInputStartInput").val("");
     $("#userHoursInputEndInput", "#userMinutesInputEndInput", "#userSecondsInputEndInput").val("");
