@@ -1,34 +1,58 @@
 
-body { 
-	background: url(https://ak9.picdn.net/shutterstock/videos/6031205/thumb/1.jpg);
-	background-size: cover;
-	font-family: 'Bungee Inline', cursive;
-	color: white; }
-header { margin-top: 30px;
-		 text-align: center;
-		 color: white; 
-		 border-color: white; }
+body { 	background: url(https://ak9.picdn.net/shutterstock/videos/6031205/thumb/1.jpg);
+		background-size: 100% 100%;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	transition: .5;
+		color: lightgrey;
+		background-size: cover;
+		font-family: 'Bungee Inline', cursive;
+		color: white; }
+header { background: rgba(0,0,0,.65);
+		 text-align: center; }
 header a { color: white; text-decoration: none; }
 header a:hover { text-decoration: none; color:white; }
-form { text-align: center;
-	   margin-top: 20px;
-	   border-color: white; }
+form { 	text-align: center;
+	   	margin-top: 20px;
+	   	border-color: white; }
+#form-1 { background: rgba(0,0,0,.65);
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-radius: 25px; }
+#form-2 { background: rgba(0,0,0,.65);
+		padding-bottom: 10px;
+		border-style: dashed;
+		border-color: white;
+		border-radius: 25px;}
+header a { color: white; text-decoration: none; }
+header a:hover { text-decoration: none; }
+form { font-family: 'Sigmar One', cursive;
+		 background: black;
+		margin-top: 20px;
+	   text-align: center; }
+
 form, #results { padding: 0 20px; }
 .item { margin-bottom: 25px; }
-.w100 { width: 100%; }
+.w100 { width: 100%;
+		color: lightgrey; }
+header h1 {color:lightgrey;
+		   font-size: 50px;}
 
 .btn-submit{ background: blue; border-color: white; color: white; }
-.btn-submit:hover, .btn-submit:active, .btn-submit:focus { background: lightblue;  border-color: white; color:white; }
+.btn-submit:hover, .btn-submit:active, .btn-submit:focus { background: lightgrey;  border-color: white; color:blue; }
 .btn-copy { background: blue; border-color: white; color: white; }
-.btn-copy:hover, .btn-copy:active, .btn-copy:focus { background: lightblue;  border-color: white; color: white; }
+.btn-copy:hover, .btn-copy:active, .btn-copy:focus { background: lightgrey;  border-color: white; color: blue; }
 .btn-primary { background: blue; border-color: white; }
 
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: lightblue;  border-color: white; }
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: lightgrey;  border-color: white; color:blue; }
 .yt-red {background-color: red; color: white;}
 .ig-purple {background-color: purple; color: white;}
 .data-orange {background-color: orange; color: white;}
 
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: lightblue;  border-color: white; }.yt-red {background-color: red; color: white;}
-.ig-purple {background-color: purple; color: white;}
-.data-orange {background-color: orange; color: white;}
-
+@media screen and (max-width: 480px) {
+	body{
+		background: lightblue;
+		color: black;}
+	form{
+		color: white;}
+}
