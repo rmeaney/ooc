@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
 // Initialize Firebase
   var config = {
     apiKey: "AIzaSyCJ6899v8Dn_6PkVktN1nDID6XvtB8P1Gg",
@@ -81,7 +81,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   itemStop + "</td><td>" + itemUrl + "</td><td>" + itemButton + "</td>");
 
 });
-}
+
 
     // MAIN PROCESS + INITIAL CODE
     // --------------------------------------------------------------------------------
