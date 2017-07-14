@@ -37,7 +37,7 @@
          console.log(itemStop);
          var itemButton = '<a href = '+ itemUrl + ' target = "_blank"><button class = "dbButton">Click Here</button></a>'
 
-         if (itemTitle.length == 0){
+         if (itemTitle == ''){
           $('#noTitleModal').modal('show');
          }else{
 
