@@ -1,0 +1,12 @@
+
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCJ6899v8Dn_6PkVktN1nDID6XvtB8P1Gg",
+    authDomain: "outofcontextdatabase.firebaseapp.com",
+    databaseURL: "https://outofcontextdatabase.firebaseio.com",
+    projectId: "outofcontextdatabase",
+    storageBucket: "outofcontextdatabase.appspot.com",
+    messagingSenderId: "25545536521"
+  };
+  firebase.initializeApp(config);

@@ -90,6 +90,14 @@ header h1 {color:lightgrey;
 		line-height: 20px;
 		font-family:impact;
 	}
+
+	.dbModalHeader{
+		background-color:blue;
+		color:white;
+	}
+	#dataBaseModal{
+		color:black;
+	}
 /*Modal Styling End*/
 
 @media screen and (max-width: 480px) {
