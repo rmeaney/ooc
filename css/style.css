@@ -76,6 +76,10 @@ header h1 {color:lightgrey;
 
 }
 
+#userTitle{
+	color:#A9A9A9;
+}
+
 /*Modal Styling Start*/
 	.myModalHeader{
 		background-color:red;
