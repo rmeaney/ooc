@@ -1,5 +1,7 @@
 $(document).ready(function(){
+    $("#badLinkModal").modal('hide');
     //focus in erase
+
     $('.userTimeInput').on('focus',function(event){
         $(this).val('');
     });
@@ -60,11 +62,13 @@ $(document).ready(function(){
         $('#addToDataBaseBox').append('<div id = "addDataPrompt"><p>Please enter a title:</p>'+'<input Type ="text" id = "userTitle" class =".userTimeInput" value = "" size = "4">');
         $('#addToDataBaseBox').append('<a href = "#submitBTN"><button id = "submitToDbBTN">Add to Database</button></a></div>');
         $('#addToDataBaseBox').append('<hr>');
+        console.log(finalLink);
+        console.log('start time: '+ $(videoStartTime).text());
 
         //clear userURL field for next use
         $('#userUrl').val('');
     }else{
-        alert('not a valid url');
+        $('#badLinkModal').modal('show');
     }
 
 });
