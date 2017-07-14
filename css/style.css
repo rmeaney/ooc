@@ -1,5 +1,5 @@
 
-body { 	background: url(https://ak9.picdn.net/shutterstock/videos/6031205/thumb/1.jpg);
+body { 	background: url(../images/backdropTest.png);
 		background-size: 100% 100%;
     	background-repeat: no-repeat;
     	background-attachment: fixed;
@@ -16,8 +16,21 @@ form { 	text-align: center;
 	   	margin-top: 20px;
 	   	border-color: white; 
 }
+#urlAnchor{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#form-1 h3{
+	padding-bottom:10px;
+}
+#form-2 h3{
+	padding-top:10px;
+}
 .userTimeInput{
 	color: #A9A9A9;
+	border-radius:5px;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 #form-1 { background: rgba(0,0,0,.65);
 		padding-top: 10px;
@@ -28,7 +41,8 @@ form { 	text-align: center;
 		border-style: dashed;
 		border-color: white;
 		border-radius: 25px;}
-header a { color: white; text-decoration: none; }
+header a { color: white; 
+	text-decoration: none; }
 header a:hover { text-decoration: none; }
 form { font-family: 'Sigmar One', cursive;
 		 background: black;
@@ -52,6 +66,27 @@ header h1 {color:lightgrey;
 .yt-red {background-color: red; color: white;}
 .ig-purple {background-color: purple; color: white;}
 .data-orange {background-color: orange; color: white;}
+
+.item{
+	padding-top:20px;
+}
+
+
+.generatedButton{
+	padding-bottom:10px;
+}
+
+/*Modal Styling Start*/
+	.myModalHeader{
+		background-color:red;
+	}
+
+	.modalErrorBody{
+		color:black;
+		line-height: 20px;
+		font-family:impact;
+	}
+/*Modal Styling End*/
 
 @media screen and (max-width: 480px) {
 	body{
