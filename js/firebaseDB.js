@@ -23,7 +23,7 @@
       //  Store Click Data to Firebase in a JSON property called clickCount
       // Note how we are using the Firebase .set() method
       
-        event.preventDefault();
+        return false;
 
 
 
