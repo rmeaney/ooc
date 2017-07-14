@@ -118,3 +118,14 @@ header h1 {color:lightgrey;
 	}
 }
 
+@media screen and (max-width: 1000px) {
+	/*body{
+		background: lightblue;
+		color: black;}*/
+	form{
+		color: white;}
+	.modal-open{
+	font-size:8px;
+	}
+}
+
