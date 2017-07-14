@@ -18,7 +18,7 @@
     // --------------------------------------------------------------------------------
 
     // On Click of Button
-    $(document).on("click","#submitToDbBTN", function() {
+    $(document).on("click","#submitToDbBTN", function(event) {
 
       //  Store Click Data to Firebase in a JSON property called clickCount
       // Note how we are using the Firebase .set() method
