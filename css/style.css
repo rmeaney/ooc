@@ -102,16 +102,19 @@ header h1 {color:lightgrey;
 	#dataBaseModal{
 		color:black;
 	}
+	.modal-open{
+	font-size:12px;
+	}
 /*Modal Styling End*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 	body{
 		background: lightblue;
 		color: black;}
 	form{
 		color: white;}
-		.modal-open{
+	.modal-open{
 	font-size:5px;
-}
+	}
 }
 
