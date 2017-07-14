@@ -110,7 +110,8 @@ header h1 {color:lightgrey;
 		color: black;}
 	form{
 		color: white;}
+		.modal-open{
+	font-size:6px;
 }
-.modal-open{
-	font-size:10px;
 }
+
