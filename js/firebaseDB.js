@@ -17,12 +17,14 @@
     // --------------------------------------------------------------------------------
 
     // On Click of Button
-    $("#submitToDbBTN").on("click", function() {
+    $(document).on("click","#submitToDbBTN", function() {
 
       //  Store Click Data to Firebase in a JSON property called clickCount
       // Note how we are using the Firebase .set() method
       
         event.preventDefault();
+
+
 
         // grab user input
          var itemUrl = $('#outputLink').text();
@@ -34,6 +36,10 @@
          var itemStop = $('#videoEndTime').text();
          console.log(itemStop);
          var itemButton = '<a href = '+ itemUrl + ' target = "_blank"><button class = "dbButton">Click Here</button></a>'
+
+         if (itemTitle == ''){
+          $('#noTitleModal').modal('show');
+         }else{
 
          //upload employee data to the database
          var newVid ={
@@ -51,6 +57,8 @@
          //console.log(newVid.ytStop);
 
          database.ref().push(newVid);
+         $('#dbSuccessModal').modal('show');
+       }
      
     });
 
@@ -70,6 +78,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   // Add each train's data into the table
   $("#trainTable > tbody").append("<tr><td>" + itemTitle + "</td><td>" + itemStart + "</td><td>" +
   itemStop + "</td><td>" + itemUrl + "</td><td>" + itemButton + "</td>");
+
 });
 
     // MAIN PROCESS + INITIAL CODE

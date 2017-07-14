@@ -1,5 +1,7 @@
 $(document).ready(function(){
     $("#badLinkModal").modal('hide');
+    $('#noTitleModal').modal('hide');
+    $('#dbSuccessModal').modal('hide');
     //focus in erase
 
     $('.userTimeInput').on('focus',function(event){

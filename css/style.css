@@ -95,6 +95,10 @@ header h1 {color:lightgrey;
 		background-color:blue;
 		color:white;
 	}
+	.dbSuccessHeader{
+		background-color:blue;
+		color:white;
+	}
 	#dataBaseModal{
 		color:black;
 	}

@@ -92,11 +92,12 @@
         </div>
 
         <!--Modals Start-->
-           <div id="badLinkModal" class="modal fade" role="dialog">
+        <!--Paste Link Error Model Begin -->
+<div id="badLinkModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content" id = badLinkModal>
+    <div class="modal-content">
       <div class="modal-header myModalHeader">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Woah! Hold on a second!</h4>
@@ -111,6 +112,56 @@
 
   </div>
 </div>
+
+<!--Paste Link Error Model End -->
+
+        <!--Title Error Model Begin -->
+<div id="noTitleModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header myModalHeader">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Woah! Hold on a second!</h4>
+      </div>
+      <div class="modal-body modalErrorBody">
+        <p>You need a title to enter something into the database. Type something relevant so it makes it easy for others to find.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--Paste Title Error Model End -->
+
+<!--Paste Link Error Model End -->
+
+        <!--Db Entry Successful Model Begin -->
+<div id="dbSuccessModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header dbSuccessHeader">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Congratulations!</h4>
+      </div>
+      <div class="modal-body modalErrorBody">
+        <p>Your video has been added to our database. Please click the button at the top of the page to see it.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--Db Entry Successful Model End -->
 
             <!--DataBase Modal begin-->
 <div class = "modal fade" id ="dataBaseModal" role = "dialog">
@@ -128,7 +179,7 @@
                                         <th>Start Time</th>
                                         <th>End Time</th>
                                         <th>URL</th>
-                              <th>link</th>
+                                        <th>link</th>
                                         
                                       </tr>
                                     </thead>
