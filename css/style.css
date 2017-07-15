@@ -9,7 +9,8 @@ body { 	background: url(../images/backdropTest.png);
 		font-family: 'Bungee Inline', cursive;
 		color: white; }
 header { background: rgba(0,0,0,.65);
-		 text-align: center; }
+		 text-align: center;
+         width: 100%; }
 header a { color: white; text-decoration: none; }
 header a:hover { text-decoration: none; color:white; }
 form { 	text-align: center;
@@ -117,6 +118,9 @@ header h1 {color:lightgrey;
 	.modal-open{
 	font-size:5px;
 	}
+    #databaseModal{
+
+    }
 }
 
 @media screen and (max-width: 1000px) {

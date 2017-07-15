@@ -35,7 +35,7 @@
          console.log(itemStop);
          var itemButton = '<a href = '+ itemUrl + ' target = "_blank"><button class = "dbButton">Click Here</button></a>'
 
-         //upload employee data to the database
+         //upload clip data to the database
          var newVid ={
           ytUrl: itemUrl,
           ytTitle: itemTitle,
@@ -67,9 +67,9 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   var itemButton = childSnapshot.val().ytButton;
 
   //log the video info
-  // Add each train's data into the table
+  // Add each clip's data into the table
   $("#trainTable > tbody").append("<tr><td>" + itemTitle + "</td><td>" + itemStart + "</td><td>" +
-  itemStop + "</td><td>" + itemUrl + "</td><td>" + itemButton + "</td>");
+  itemStop + "</td><td>" + itemUrl + "</td><tr>" + itemButton + "</tr>");
 });
 
     // MAIN PROCESS + INITIAL CODE
