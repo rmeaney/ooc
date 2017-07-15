@@ -69,7 +69,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   //log the video info
   // Add each clip's data into the table
   $("#trainTable > tbody").append("<tr><td>" + itemTitle + "</td><td>" + itemStart + "</td><td>" +
-  itemStop + "</td><td>" + itemUrl + "</td><tr>" + itemButton + "</tr>");
+  itemStop + "</td><td>" + itemUrl + "</td><td>" + itemButton + "</td>");
 });
 
     // MAIN PROCESS + INITIAL CODE
