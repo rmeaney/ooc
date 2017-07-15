@@ -56,6 +56,7 @@ form, #results { padding: 0 20px; }
 header h1 {color:lightgrey;
 		   font-size: 50px;}
 
+/*Button Style*/
 .btn-submit{ background: blue; border-color: white; color: white; }
 .btn-submit:hover, .btn-submit:active, .btn-submit:focus { background: lightgrey;  border-color: white; color:blue; }
 .btn-copy { background: blue; border-color: white; color: white; }
@@ -64,7 +65,7 @@ header h1 {color:lightgrey;
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: lightgrey;  border-color: white; color:blue; }
 .data-orange {background-color: orange; color: white;}
-.data-orange:hover {background-color: lightgrey; color: orange;}
+.data-orange:hover {background-color: lightgrey; color:orange;}
 
 .item{
 	padding-top:20px;
