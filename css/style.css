@@ -63,9 +63,8 @@ header h1 {color:lightgrey;
 .btn-primary { background: blue; border-color: white; }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: lightgrey;  border-color: white; color:blue; }
-.yt-red {background-color: red; color: white;}
-.ig-purple {background-color: purple; color: white;}
 .data-orange {background-color: orange; color: white;}
+.data-orange:hover {background-color: lightgrey; color: orange;}
 
 .item{
 	padding-top:20px;
@@ -113,6 +112,7 @@ header h1 {color:lightgrey;
 		color: black;}
 	form{
 		color: white;}
+    header{ color: white; }
 	.modal-open{
 	font-size:5px;
 	}
